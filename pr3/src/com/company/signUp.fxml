@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.SignUpController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="109.0" prefHeight="297.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Button fx:id="signUpButton" layoutX="281.0" layoutY="217.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="162.0" style="-fx-background-color: #f39c63;" text="Зарегистрироваться" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="signUpLastName" layoutX="392.0" layoutY="14.0" prefHeight="29.0" prefWidth="299.0" promptText="Фамилия" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="signUpName" layoutX="14.0" layoutY="14.0" prefHeight="29.0" prefWidth="299.0" promptText="Имя" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="login_field" layoutX="14.0" layoutY="75.0" prefHeight="29.0" prefWidth="299.0" promptText="Логин" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password_field" layoutX="390.0" layoutY="77.0" prefHeight="25.0" prefWidth="299.0" promptText="Пароль" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="signUpCountry" layoutX="390.0" layoutY="130.0" prefHeight="29.0" prefWidth="299.0" promptText="Страна" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="signUpId" layoutX="14.0" layoutY="130.0" prefHeight="29.0" prefWidth="299.0" promptText="id" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            </children>
+        </AnchorPane>
+        <Label layoutX="201.0" layoutY="27.0" text="MyFirstApp" textFill="WHITE">
+            <font>
+                <Font name="Elephant" size="49.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

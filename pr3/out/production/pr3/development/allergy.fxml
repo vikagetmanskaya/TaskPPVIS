@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="development.AllergyController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="109.0" prefHeight="297.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Label fx:id="allergyProduct" layoutX="47.0" layoutY="22.0" prefHeight="30.0" prefWidth="300.0" text="На какой продукт аллергия?">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="allergyInput" layoutX="47.0" layoutY="60.0" prefHeight="42.0" prefWidth="300.0" />
+                <Button fx:id="nextButton1" layoutX="431.0" layoutY="221.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="224.0" text="Далее" />
+                <VBox fx:id="res" layoutX="413.0" layoutY="14.0" prefHeight="200.0" prefWidth="249.0" />
+            <Button fx:id="returnButton" layoutX="24.0" layoutY="245.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="171.0" text="Вернуться ко всем рецетам" />
+            <Label fx:id="recipe" layoutX="46.0" layoutY="113.0" prefHeight="30.0" prefWidth="300.0" text="Рецепт">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="priemInput" layoutX="45.0" layoutY="149.0" prefHeight="20.0" prefWidth="269.0" promptText="приём пищи" />
+            <TextField fx:id="productInput" layoutX="45.0" layoutY="188.0" prefHeight="20.0" prefWidth="269.0" promptText="обязательный продукт" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="38.0" layoutY="28.0" text="Блюда, в которых есть продукт, на который аллергия" textFill="WHITE">
+            <font>
+                <Font name="Elephant" size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

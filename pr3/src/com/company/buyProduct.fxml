@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.BuyController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="109.0" prefHeight="297.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Label fx:id="choiseProduct" layoutX="70.0" layoutY="43.0" prefHeight="30.0" prefWidth="151.0" text="Выберите продукт">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="idInput" layoutX="70.0" layoutY="85.0" prefHeight="42.0" prefWidth="142.0" promptText="id" />
+                <VBox fx:id="res" layoutX="323.0" layoutY="13.0" prefHeight="200.0" prefWidth="360.0">
+                    <children>
+                        <VBox fx:id="allProduct" prefHeight="200.0" prefWidth="100.0" />
+                    </children></VBox>
+                <Button fx:id="checkButton" layoutX="475.0" layoutY="250.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" text="Посмтреть имеющие продукты" />
+                <Button fx:id="buyButton" layoutX="281.0" layoutY="250.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" text="Купить" />
+            <TextField fx:id="productInput" layoutX="72.0" layoutY="149.0" prefHeight="42.0" prefWidth="142.0" promptText="Продукт" />
+            <Button fx:id="returnButton" layoutX="54.0" layoutY="250.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" text="Вернуться к рецепту" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="151.0" layoutY="29.0" text=" Купить продукты" textFill="WHITE">
+            <font>
+                <Font name="Elephant" size="49.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
