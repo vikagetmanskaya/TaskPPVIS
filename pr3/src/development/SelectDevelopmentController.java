@@ -1,4 +1,4 @@
-package menu;
+package development;
 
 import java.io.IOException;
 import java.net.URL;
@@ -10,7 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class MenuController {
+public class SelectDevelopmentController {
 
     @FXML
     private ResourceBundle resources;
@@ -19,29 +19,24 @@ public class MenuController {
     private URL location;
 
     @FXML
-    private Button bazaButton;
+    private Button Button1;
 
     @FXML
-    private Button firstButton;
+    private Button Button2;
 
     @FXML
-    private Button secondButton;
-
-    @FXML
-    private Button thirdButton;
+    private Button Button3;
 
     @FXML
     void initialize() {
-        bazaButton.setOnAction(event -> openNewScene("/com/company/app.fxml"));
-        firstButton.setOnAction(event -> openNewScene("/development/development3/dopQuestion.fxml"));
-        secondButton.setOnAction(event -> openNewScene("/development/development2/allergy.fxml"));
-        thirdButton.setOnAction(event -> openNewScene("/development/development1/pribors.fxml"));
+    Button1.setOnAction(event ->openNewScene("/development/development3/dopQuestion.fxml"));
+    Button2.setOnAction(event -> openNewScene("/development/development2/allergy.fxml"));
+        Button3.setOnAction(event -> openNewScene("/development/development1/pribors.fxml"));
     }
     public void openNewScene(String window){
-        bazaButton.getScene().getWindow().hide();
-        firstButton.getScene().getWindow().hide();
-        secondButton.getScene().getWindow().hide();
-        thirdButton.getScene().getWindow().hide();
+        Button1.getScene().getWindow().hide();
+        Button2.getScene().getWindow().hide();
+        Button3.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(window));
         try {
@@ -54,6 +49,4 @@ public class MenuController {
         stage.setScene(new Scene(root));
         stage.showAndWait();
     }
-
 }
-

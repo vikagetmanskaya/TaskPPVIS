@@ -12,6 +12,7 @@
          <children>
             <VBox fx:id="check" layoutX="249.0" layoutY="29.0" prefHeight="200.0" prefWidth="413.0" />
             <Button fx:id="nextButton" layoutX="564.0" layoutY="259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="Далее" />
+            <Button fx:id="selectAmountButton" layoutX="108.0" layoutY="258.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="339.0" text="Выбрать этап развития" />
          </children>
         </AnchorPane>
         <Label layoutX="64.0" layoutY="27.0" text="Просмотреть все рецепты" textFill="WHITE">
