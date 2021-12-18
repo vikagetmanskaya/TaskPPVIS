@@ -1,4 +1,4 @@
-package development;
+package menu;
 
 import java.io.IOException;
 import java.net.URL;
@@ -10,7 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class SelectDevelopmentController {
+public class MenuController {
 
     @FXML
     private ResourceBundle resources;
@@ -19,24 +19,29 @@ public class SelectDevelopmentController {
     private URL location;
 
     @FXML
-    private Button Button1;
+    private Button bazaButton;
 
     @FXML
-    private Button Button2;
+    private Button firstButton;
 
     @FXML
-    private Button Button3;
+    private Button secondButton;
+
+    @FXML
+    private Button thirdButton;
 
     @FXML
     void initialize() {
-    Button1.setOnAction(event ->openNewScene("/development/development3/dopQuestion.fxml"));
-    Button2.setOnAction(event -> openNewScene("/development/development2/allergy.fxml"));
-        Button3.setOnAction(event -> openNewScene("/development/development1/pribors.fxml"));
+        bazaButton.setOnAction(event -> openNewScene("/com/company/app.fxml"));
+        firstButton.setOnAction(event -> openNewScene("/development/development3/dopQuestion.fxml"));
+        secondButton.setOnAction(event -> openNewScene("/development/development2/allergy.fxml"));
+        thirdButton.setOnAction(event -> openNewScene("/development/development1/pribors.fxml"));
     }
     public void openNewScene(String window){
-        Button1.getScene().getWindow().hide();
-        Button2.getScene().getWindow().hide();
-        Button3.getScene().getWindow().hide();
+        bazaButton.getScene().getWindow().hide();
+        firstButton.getScene().getWindow().hide();
+        secondButton.getScene().getWindow().hide();
+        thirdButton.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(window));
         try {
@@ -49,4 +54,6 @@ public class SelectDevelopmentController {
         stage.setScene(new Scene(root));
         stage.showAndWait();
     }
+
 }
+

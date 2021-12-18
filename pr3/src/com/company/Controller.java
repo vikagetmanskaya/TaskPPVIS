@@ -67,7 +67,7 @@ while (true){
     counter++;
 }
 if (counter>=1){
-openNewScene("/com/company/app.fxml");
+openNewScene("/menu/menu.fxml");
 }
 else {
     JOptionPane.showMessageDialog(null, "Неправильно введены данные!");

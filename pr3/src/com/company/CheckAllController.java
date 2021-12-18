@@ -28,8 +28,7 @@ public class CheckAllController {
 
     @FXML
     private Button nextButton;
-    @FXML
-    private Button selectAmountButton;
+
 
     DataBaseHandler db = null;
 
@@ -38,8 +37,7 @@ public class CheckAllController {
         db = new DataBaseHandler();
         initData();
         nextButton.setOnAction(event ->openNewScene("/com/company/choiceRecipe.fxml"));
-        selectAmountButton.setOnAction(event-> openNewScene("/development/selectDevelopment.fxml"));
-    }
+       }
     private void initData() {
         try {
             ArrayList<String> recipes = db.getAllRecipes();
@@ -54,7 +52,6 @@ public class CheckAllController {
     }
     public void openNewScene(String window){
         nextButton.getScene().getWindow().hide();
-        selectAmountButton.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource(window));
         try {
